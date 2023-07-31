@@ -2,9 +2,12 @@
   "name": "test_nodejs_api_mocha_chai",
   "version": "1.0.0",
   "description": "Testing NodeJS API With Mocha and Chai",
-  "main": "index.js",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test --timeout 0 --exit"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +18,7 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "chai-http": "^4.4.0",
-    "faker": "^6.6.6",
+    "faker": "^4.1.0",
     "mocha": "^10.2.0"
   }
 }
